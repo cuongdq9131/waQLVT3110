@@ -1,0 +1,83 @@
+﻿.styleLogin1
+{
+    text-align: center;
+    font-weight: bold;
+    font-size: 13pt;  
+    font-family: Times New Roman, Tahoma, Verdana, Arial;
+    background-color: #00A855;  
+    color: White;
+    height: 34px; 
+}
+#Text1
+{
+    width: 199px;
+}
+#Password1
+{
+    width: 197px;
+}
+
+.styleLogintable
+{
+	font-family: Arial, Times New Roman, Tahoma;
+	font-size: 12pt;
+	font-weight: normal;
+	color:Black;    
+	border-color: Teal;
+	border-bottom-width: thin;
+	border-left-width: thin;
+	border-right-width: thin;
+	border-top-width: thin;    
+	border-collapse: collapse;       
+}
+
+.styleLogin3
+{
+	font-family: Times New Roman, Tahoma, Arial;
+	font-size: 13pt;
+	font-weight: normal;
+	color:Black;  
+	height:auto;     
+    width: 127px;
+    text-align: right;
+    vertical-align: middle; 
+    padding-top:20px; 
+}
+
+.styleLogin4
+{
+	font-family: Times New Roman, Tahoma, Arial;
+	font-size: 13pt;
+	font-weight: normal;
+	color:Black;  
+	height:auto;     
+    width: 127px;
+    text-align: right;
+    vertical-align: middle; 
+}
+
+.styleLogin5
+{
+    vertical-align: middle; 
+    width: 182px;
+    padding-top:20px; 
+}
+
+.styleLogin7
+{
+    vertical-align: middle; 
+    width: 182px;
+    padding-bottom:10px; 
+}
+
+.styleLogin6
+{
+    width:220px;
+}
+
+.objlogin
+{
+    vertical-align: middle; 
+    padding-top:30px; 
+    padding-bottom:30px; 
+}

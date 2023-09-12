@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode title="Home">
+     <siteMapNode url="VatTu.aspx" title="Vật tư"  description="" />
+     <siteMapNode url="~/NhapVT_DaTonTai.aspx" title=" Nhập vật tư"  description="" />
+     <siteMapNode url="~/XuatVatTu.aspx" title="Xuất vật tư"  description="" />
+     <siteMapNode url="~/LuanChuyen.aspx" title="Luân chuyển vật tư"  description="" />
+     <siteMapNode url="~/ThanhLy.aspx" title="Thanh lý vật tư"  description="" />
+
+    <siteMapNode url="~/Import.aspx" title="Lấy dữ liệu từ file"  description="" />
+     <siteMapNode url="~/nguoidung.aspx" title="Quản trị người dùng"  description="" />
+    <siteMapNode title="Danh mục">
+      <siteMapNode url="~/DonVi.aspx" title="Đơn vị"/>         
+       <siteMapNode url="~/HopDong.aspx" title="Gói thầu"/>
+    </siteMapNode>
+
+  </siteMapNode>
+</siteMap>

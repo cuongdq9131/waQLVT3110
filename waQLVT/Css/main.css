@@ -1,0 +1,364 @@
+﻿.style_Banner
+{
+    font-size: medium;
+    font-family: Arial,Tahoma, Times New Roman;   
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+     
+      
+}
+
+.banlogo
+{
+    padding-top: 7px;
+    padding-bottom:7px;  
+    text-align: right;  
+}
+
+.banttkt
+{
+    font-size: 18pt;
+    font-family: Arial,Tahoma,Times New Roman;   
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    text-align: center;
+    color:Black   
+}
+
+.banqlk
+{
+    font-size: 20pt;
+    font-family: Arial,Tahoma,Times New Roman;   
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal; 
+    text-align: center;
+    color:Black     
+}
+
+.style_Menu
+{
+    font-size: medium;
+    font-family: Arial,Tahoma,  Times New Roman;   
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    color:Red;   
+    }
+    
+.style_Footer
+{
+    font-size: medium;
+    font-family: Arial,Tahoma,  Times New Roman;   
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;  
+    background-color: #3366FF; 
+    color: #FFFFFF; 
+    text-align: center;
+}
+.style_Footer1
+{
+    font-size: 10pt;
+    font-family: Arial,Tahoma, Times New Roman;   
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;  
+    color: #656565; 
+    text-align: center;
+    padding-top: 15px;
+}
+
+.style_Footer2
+{
+    font-size: 10pt;
+    font-family: Arial,Tahoma, Times New Roman;   
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;  
+    color: #656565; 
+    text-align: center;
+    padding-top: 7px;
+    padding-bottom: 15px;
+}
+.style_Title
+{
+    font-size: x-large;
+    text-align: left;
+    font-weight: bold;
+    font-family: Times New Roman,Tahoma, Arial;
+    height: 37px;
+}
+.style_TitleLogin
+{
+    color: Black;
+    font-size: x-large;
+    text-align: center;
+    font-family: Times New Roman;
+}
+        
+.style_Header
+{
+    font-size: medium;
+    font-family: Arial,Tahoma,  Times New Roman;   
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;  
+    background-color: #3366FF; 
+    color: #FFFFFF; 
+    text-align: center;
+}
+
+.style_Paragraph
+{
+    font-size: 13px;
+    font-family: Verdana, Arial,Times New Roman,Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    vertical-align: middle;
+    
+}
+
+.style_Paragraph_Tahoma
+{
+    font-size: medium;
+    font-family: Tahoma,Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    vertical-align: middle;
+}
+
+.style_Paragraph_Arial
+{
+    font-size: medium;
+    font-family: Arial, Tahoma,Times New Roman;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    vertical-align: middle;
+}
+
+.style_ParagraphBold
+{
+    font-size: 13px;
+    font-family: Verdana,Arial,Times New Roman,Tahoma;
+    font-style: normal;
+    font-weight: bold;
+    font-variant: normal;
+    vertical-align: middle;
+}
+
+.style_Control
+{
+    font-size: 13px;
+    font-family: Verdana,Arial,Times New Roman,Tahoma;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.style_Message
+{
+    font-family: Times New Roman;
+    font-size: medium;
+    height: 24px;
+    width: 800px;
+}
+
+.style_Talbe
+{
+    font-size: 13px;
+    font-family: Verdana, font-size: medium;
+    font-family: Verdana, Times New Roman,Tahoma, Arial;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.style_Talbe_BGcolor
+{
+    font-size: 13px;
+    font-family: Verdana, font-size: medium;
+    font-family: Verdana, Times New Roman,Tahoma, Arial;
+    font-style: normal;
+    font-weight: normal;
+    text-align: left;
+    vertical-align: middle;
+    background-color: #9EED9C; 
+    color: Black; 
+}
+
+.mnutop2
+{
+    height: 30px;
+    font-weight: bold;
+    text-align: right;
+    font-size: 10pt;
+    color: White; 
+    font-family: Arial, Tahoma, Times New Roman, Helvetica, sans-serif;
+    background-color: #225486;
+    padding-right: 10px; 
+}
+
+.mnutop9
+{
+    height: 30px;
+    font-weight: bold;
+    text-align: left;
+    font-size: 10pt;
+    color: White; 
+    font-family: Arial, Tahoma, Times New Roman, Helvetica, sans-serif;
+    background-color: #225486;
+    padding-left: 10px; 
+}
+
+a, a:link, a:visited {
+
+	color: #476205;
+
+	text-decoration: none;
+
+}
+
+a:hover, a:active, a:focus {
+
+	color: #dd4806;
+
+	text-decoration: none;
+
+}
+
+.signout:link
+{
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none;	
+	
+}
+
+.signout:visited {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none
+}
+.signout:active {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none
+}
+.signout:hover{
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none
+}
+
+a, a:link, a:visited {
+
+	color: #476205;
+
+	text-decoration: none;
+
+}
+
+a:hover, a:active, a:focus {
+
+	color: #dd4806;
+
+	text-decoration: none;
+
+}
+
+.changepass:link
+{
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none;	
+	
+}
+
+.changepass:visited {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none
+}
+.changepass:active {
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none
+}
+.changepass:hover{
+	FONT-WEIGHT: normal; 
+	FONT-SIZE: 10pt; 
+	COLOR: white; 
+	FONT-FAMILY: Arial, tahoma, verdana; 
+	width:100%;
+	TEXT-DECORATION: none
+}
+
+.highlight {
+
+	padding: 1px 5px;
+
+	background: yellow;
+
+	font-weight: bold;
+
+}
+
+
+.pagination {
+            font-size: 80%;
+        }
+
+.pagination a {
+    text-decoration: none;
+    border: solid 1px #AAE;
+    color: #15B;
+}
+
+.pagination a, .pagination span {
+    display: block;
+    float: left;
+    padding: 0.3em 0.5em;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
+.pagination .current {
+    background: #26B;
+    color: #fff;
+    border: solid 1px #AAE;
+}
+
+.pagination .current.prev, .pagination .current.next{
+    color:#999;
+    border-color:#999;
+    background:#fff;
+}

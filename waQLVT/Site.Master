@@ -1,0 +1,89 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="waQLVT.SiteMaster" %>
+<%@ Register src="Modules/banner.ascx" tagname="banner" tagprefix="uc1" %>
+
+<%@ Reference Control = "~/Modules/menutop.ascx" %>
+<%@ Register src="Modules/bottom.ascx" tagname="bottom" tagprefix="uc2" %>
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/main.css" rel="stylesheet" type="text/css" /> 
+
+    <link href="Css/menu.css" rel="stylesheet" type="text/css" /> 
+
+</head>
+
+<body>
+
+    <form id="form1" runat="server">
+    <table cellpadding = "0" cellspacing = "0" border = "0" width = "100%" >
+        <tr><td align = "left">
+            <uc1:banner ID="banner1" runat="server" />
+        </td></tr> 
+
+        <tr><td align = "center">
+             <asp:PlaceHolder ID="phMenuTop" runat="server"></asp:PlaceHolder>
+        </td></tr> 
+    </table>
+   
+    <table align="center" width = "100%">
+        <tr>
+            <td class="style_Menu">
+               <%-- <asp:Menu ID="Menu" runat="server" Orientation="Horizontal"
+                    Width="1000px" DataSourceID="sm1" ForeColor="#7C6F57" BackColor="#F7F6F3" 
+                    DynamicHorizontalOffset="2" Font-Names="Verdana" Font-Size="0.9em" 
+                    StaticSubMenuIndent="10px">
+                    <DynamicHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <DynamicMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <DynamicMenuStyle BackColor="#F7F6F3" />
+                    <DynamicSelectedStyle BackColor="#5D7B9D" />
+                    <StaticHoverStyle BackColor="#7C6F57" ForeColor="White" />
+                    <StaticMenuItemStyle HorizontalPadding="5px" VerticalPadding="2px" />
+                    <StaticSelectedStyle BackColor="#5D7B9D" />
+                 
+                </asp:Menu>--%>
+                 <asp:Menu id="menuPrimary" 
+                runat="server" 
+                DataSourceID="sm1" 
+                Orientation="Horizontal" 
+                StaticEnableDefaultPopOutImage="false"
+                StaticDisplayLevels="1"  
+                MaximumDynamicDisplayLevels="1" Font-Names="Verdana" Font-Size="0.75em" ForeColor="Black">
+                    <StaticMenuStyle CssClass="primaryStaticMenu"/>
+                    <StaticMenuItemStyle CssClass="primaryStaticMenuItem"/>
+                    <StaticHoverStyle CssClass="primaryStaticHover"/>   
+                    <DynamicMenuStyle CssClass="primaryDynamicMenu" />     
+                    <DynamicMenuItemStyle CssClass="primaryDynamicMenuItem"/>
+                    <DynamicHoverStyle CssClass="primaryDynamicHover"/>
+                </asp:Menu>
+                 
+                <asp:SiteMapDataSource ID="sm1" runat="server" ShowStartingNode="false"/>
+            </td>
+           
+        </tr>
+        </table>
+
+            
+        <table style="width: 100%;">
+        <tr style="width: 100%;">
+            <td class="style_Paragraph" colspan="5" valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        </table>
+    <table cellpadding = "0" cellspacing = "0" border = "0" width = "100%" >
+        <tr><td align = "center">
+            
+            <uc2:bottom ID="bottom1" runat="server" />
+            
+        </td></tr> 
+    </table>
+    </form>
+</body>
+</html>

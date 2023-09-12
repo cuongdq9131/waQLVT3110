@@ -1,0 +1,562 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EC855089-2A62-42CB-AE03-ED2BD14718E9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>waQLVT</RootNamespace>
+    <AssemblyName>waQLVT</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10920.32919, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AjaxControlToolkit-Framework3.5\SampleWebSite\Bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="obout_EasyMenu_Pro, Version=3.11.3.1, Culture=neutral, PublicKeyToken=b76d93635057b0c1, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\OboutSuite\bin\obout_EasyMenu_Pro.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Code\AutocompleteService.cs">
+      <SubType>Component</SubType>
+    </Content>
+    <Content Include="Css\login.css" />
+    <Content Include="Css\main.css" />
+    <Content Include="Css\menu.css" />
+    <Content Include="DonVi.aspx" />
+    <Content Include="HopDong.aspx" />
+    <Content Include="Images\Add.bmp" />
+    <Content Include="Images\application_view_detail.png" />
+    <Content Include="Images\Arrow left.png" />
+    <Content Include="Images\Arrow right.png" />
+    <Content Include="Images\attach file1.jpg" />
+    <Content Include="Images\Badge New.png" />
+    <Content Include="Images\buletin1.jpg" />
+    <Content Include="Images\clip.gif" />
+    <Content Include="Images\date time.bmp" />
+    <Content Include="Images\date time1.bmp" />
+    <Content Include="Images\delete1.jpg" />
+    <Content Include="Images\delete2.jpg" />
+    <Content Include="Images\delete3.bmp" />
+    <Content Include="Images\delete4.jpg" />
+    <Content Include="Images\delete5.jpg" />
+    <Content Include="Images\delete6.jpg" />
+    <Content Include="Images\delete7.jpg" />
+    <Content Include="Images\detail1.jpg" />
+    <Content Include="Images\detail2.jpg" />
+    <Content Include="Images\detail4.jpg" />
+    <Content Include="Images\done.png" />
+    <Content Include="Images\edit-bbedit.png" />
+    <Content Include="Images\edit1.bmp" />
+    <Content Include="Images\edit11.jpg" />
+    <Content Include="Images\edit12.jpg" />
+    <Content Include="Images\edit2.jpg" />
+    <Content Include="Images\edit4.bmp" />
+    <Content Include="Images\edit5.bmp" />
+    <Content Include="Images\edit6.jpg" />
+    <Content Include="Images\edit7.jpg" />
+    <Content Include="Images\edit8.jpg" />
+    <Content Include="Images\expand.jpg" />
+    <Content Include="Images\expand1.jpg" />
+    <Content Include="Images\icon2.gif" />
+    <Content Include="Images\key login1.jpg" />
+    <Content Include="Images\login1.jpg" />
+    <Content Include="Images\login2.jpg" />
+    <Content Include="Images\login6.jpg" />
+    <Content Include="Images\Logo_VTV.png" />
+    <Content Include="Images\maintenance_time.png" />
+    <Content Include="Images\modify1.bmp" />
+    <Content Include="Images\modify2.bmp" />
+    <Content Include="Images\modify3.jpg" />
+    <Content Include="Images\modify4.jpg" />
+    <Content Include="Images\modify5.jpg" />
+    <Content Include="Images\modify6.jpg" />
+    <Content Include="Images\new1.jpg" />
+    <Content Include="Images\new2.jpg" />
+    <Content Include="Images\new3.jpg" />
+    <Content Include="Images\new8.jpg" />
+    <Content Include="Images\notdone.png" />
+    <Content Include="Images\send_color.gif" />
+    <Content Include="Images\THUD3.swf" />
+    <Content Include="Images\vtv.jpg" />
+    <Content Include="Import.aspx" />
+    <Content Include="LuanChuyen.aspx" />
+    <Content Include="Modules\banner.ascx" />
+    <Content Include="Modules\bottom.ascx" />
+    <Content Include="Modules\changepassword.ascx" />
+    <Content Include="Modules\donvi.ascx" />
+    <Content Include="Modules\edituser.ascx" />
+    <Content Include="Modules\hopdong.ascx" />
+    <Content Include="Modules\ImportData.ascx" />
+    <Content Include="Modules\kho.ascx" />
+    <Content Include="Modules\login.ascx" />
+    <Content Include="Modules\luanchuyenvattu.ascx" />
+    <Content Include="Modules\menumain.ascx" />
+    <Content Include="Modules\menutop.ascx" />
+    <Content Include="Modules\nguoidung.ascx" />
+    <Content Include="Modules\nhapvattu.ascx" />
+    <Content Include="Modules\NhapVatTu_DaTonTai.ascx" />
+    <Content Include="Modules\print.ascx" />
+    <Content Include="Modules\thanhlyvattu.ascx" />
+    <Content Include="Modules\timkiemvattu.ascx" />
+    <Content Include="Modules\tonghopvattu.ascx" />
+    <Content Include="Modules\vattu.ascx" />
+    <Content Include="Modules\vitridat.ascx" />
+    <Content Include="Modules\xuatvattu.ascx" />
+    <Content Include="nguoidung.aspx" />
+    <Content Include="NhapVatTu.aspx" />
+    <Content Include="NhapVT_DaTonTai.aspx" />
+    <Content Include="Report\baocaovattu.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="ThanhLy.aspx" />
+    <Content Include="vattu.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="xuatvattu.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DonVi.aspx.cs">
+      <DependentUpon>DonVi.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DonVi.aspx.designer.cs">
+      <DependentUpon>DonVi.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="HopDong.aspx.cs">
+      <DependentUpon>HopDong.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HopDong.aspx.designer.cs">
+      <DependentUpon>HopDong.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Import.aspx.cs">
+      <DependentUpon>Import.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Import.aspx.designer.cs">
+      <DependentUpon>Import.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LuanChuyen.aspx.cs">
+      <DependentUpon>LuanChuyen.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LuanChuyen.aspx.designer.cs">
+      <DependentUpon>LuanChuyen.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\banner.ascx.cs">
+      <DependentUpon>banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\banner.ascx.designer.cs">
+      <DependentUpon>banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\bottom.ascx.cs">
+      <DependentUpon>bottom.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\bottom.ascx.designer.cs">
+      <DependentUpon>bottom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\changepassword.ascx.cs">
+      <DependentUpon>changepassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\changepassword.ascx.designer.cs">
+      <DependentUpon>changepassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\donvi.ascx.cs">
+      <DependentUpon>donvi.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\donvi.ascx.designer.cs">
+      <DependentUpon>donvi.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\edituser.ascx.cs">
+      <DependentUpon>edituser.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\edituser.ascx.designer.cs">
+      <DependentUpon>edituser.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\hopdong.ascx.cs">
+      <DependentUpon>hopdong.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\hopdong.ascx.designer.cs">
+      <DependentUpon>hopdong.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\ImportData.ascx.cs">
+      <DependentUpon>ImportData.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\ImportData.ascx.designer.cs">
+      <DependentUpon>ImportData.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\kho.ascx.cs">
+      <DependentUpon>kho.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\kho.ascx.designer.cs">
+      <DependentUpon>kho.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\login.ascx.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\login.ascx.designer.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\luanchuyenvattu.ascx.cs">
+      <DependentUpon>luanchuyenvattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\luanchuyenvattu.ascx.designer.cs">
+      <DependentUpon>luanchuyenvattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\menumain.ascx.cs">
+      <DependentUpon>menumain.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\menumain.ascx.designer.cs">
+      <DependentUpon>menumain.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\menutop.ascx.cs">
+      <DependentUpon>menutop.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\menutop.ascx.designer.cs">
+      <DependentUpon>menutop.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\nguoidung.ascx.cs">
+      <DependentUpon>nguoidung.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\nguoidung.ascx.designer.cs">
+      <DependentUpon>nguoidung.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\nhapvattu.ascx.cs">
+      <DependentUpon>nhapvattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\nhapvattu.ascx.designer.cs">
+      <DependentUpon>nhapvattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\NhapVatTu_DaTonTai.ascx.cs">
+      <DependentUpon>NhapVatTu_DaTonTai.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\NhapVatTu_DaTonTai.ascx.designer.cs">
+      <DependentUpon>NhapVatTu_DaTonTai.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\print.ascx.cs">
+      <DependentUpon>print.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\print.ascx.designer.cs">
+      <DependentUpon>print.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\thanhlyvattu.ascx.cs">
+      <DependentUpon>thanhlyvattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\thanhlyvattu.ascx.designer.cs">
+      <DependentUpon>thanhlyvattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\timkiemvattu.ascx.cs">
+      <DependentUpon>timkiemvattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\timkiemvattu.ascx.designer.cs">
+      <DependentUpon>timkiemvattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\tonghopvattu.ascx.cs">
+      <DependentUpon>tonghopvattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\tonghopvattu.ascx.designer.cs">
+      <DependentUpon>tonghopvattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\vattu.ascx.cs">
+      <DependentUpon>vattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\vattu.ascx.designer.cs">
+      <DependentUpon>vattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\vitridat.ascx.cs">
+      <DependentUpon>vitridat.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\vitridat.ascx.designer.cs">
+      <DependentUpon>vitridat.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Modules\xuatvattu.ascx.cs">
+      <DependentUpon>xuatvattu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modules\xuatvattu.ascx.designer.cs">
+      <DependentUpon>xuatvattu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyDB.cs">
+      <DependentUpon>MyDB.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="MyDB.designer.cs">
+      <DependentUpon>MyDB.dbml</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="nguoidung.aspx.cs">
+      <DependentUpon>nguoidung.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="nguoidung.aspx.designer.cs">
+      <DependentUpon>nguoidung.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NhapVatTu.aspx.cs">
+      <DependentUpon>NhapVatTu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NhapVatTu.aspx.designer.cs">
+      <DependentUpon>NhapVatTu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="NhapVT_DaTonTai.aspx.cs">
+      <DependentUpon>NhapVT_DaTonTai.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NhapVT_DaTonTai.aspx.designer.cs">
+      <DependentUpon>NhapVT_DaTonTai.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Report\baocaovattu.aspx.cs">
+      <DependentUpon>baocaovattu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Report\baocaovattu.aspx.designer.cs">
+      <DependentUpon>baocaovattu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+    <Compile Include="ThanhLy.aspx.cs">
+      <DependentUpon>ThanhLy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ThanhLy.aspx.designer.cs">
+      <DependentUpon>ThanhLy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="vattu.aspx.cs">
+      <DependentUpon>vattu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="vattu.aspx.designer.cs">
+      <DependentUpon>vattu.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="xuatvattu.aspx.cs">
+      <DependentUpon>xuatvattu.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="xuatvattu.aspx.designer.cs">
+      <DependentUpon>xuatvattu.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Icons\" />
+    <Folder Include="Temp\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\BusinessEntities\BusinessEntities.csproj">
+      <Project>{7352B8F5-0CEA-441B-8207-9E8595628B2B}</Project>
+      <Name>BusinessEntities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\BusinessLogic\BusinessLogic.csproj">
+      <Project>{81F78E8D-94AB-4263-932D-E878A8DAD519}</Project>
+      <Name>BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Common\Common.csproj">
+      <Project>{EEFF5280-6B91-447B-81CD-CEACFA0896B2}</Project>
+      <Name>Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataAccess\DataAccess.csproj">
+      <Project>{5F0BF6F0-D1A0-41DD-BB2B-EA8A3E3A4287}</Project>
+      <Name>DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\DataEntities\DataEntities.csproj">
+      <Project>{59B9C9AD-AA7C-4109-AE5B-0AFFBE48C048}</Project>
+      <Name>DataEntities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Menu\admin.sitemap">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Menu\user.sitemap" />
+    <Content Include="Menu\manager.sitemap" />
+    <None Include="MyDB.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>MyDB.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyDB.dbml.layout">
+      <DependentUpon>MyDB.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>4</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>6</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>56162</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
